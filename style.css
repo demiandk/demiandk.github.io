@@ -1,15 +1,33 @@
+html {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma;
+}
 header{
-    background-color: blueviolet;
+    background-color: #b4e06c;
     display: flex;
     height: 10%;
     width: 100%;
     margin-left: 0%;
     margin-top: 0%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    border: black solid 3px;
+    border-radius: 25px;
 }
-
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
 .buttons {
     display: flex;
     gap: 0; /* Removes space between buttons */
+}
+#hobbiesDiv {
+    display: block;
+    margin: 5px;
+    border: black dashed 3px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
 }
