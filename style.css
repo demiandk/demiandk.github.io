@@ -2,17 +2,63 @@ html {
     background-color: white;
     font-family: 'Segoe UI', Tahoma;
 }
-header{
-    background-color: #b4e06c;
-    display: flex;
-    height: 10%;
-    width: 100%;
-    margin-left: 0%;
-    margin-top: 0%;
-    justify-content: space-around;
-    align-items: center;
-    border: black solid 3px;
-    border-radius: 25px;
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.header {
+    color: white;
+    overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+  
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.header a:hover {
+  background-color: #9ad694;
+  color: black;
+}
+
+.header a.active {
+  background-color: #84e67a;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
 }
 main {
     display: flex;
@@ -20,14 +66,18 @@ main {
     align-items: baseline;
 }
 .buttons {
-    display: flex;
     gap: 0; /* Removes space between buttons */
 }
 #hobbiesDiv {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    font-size: large;
     display: block;
     margin: 5px;
-    border: black dashed 3px;
-    border-radius: 25px;
     align-items: center;
     justify-content: center;
+    background-color: #d8ffd4;
+    border: 2px solid black;
+    border-radius: 15px;
 }
